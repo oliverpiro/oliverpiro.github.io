@@ -29,10 +29,27 @@
                 <div class="lbt_body lbt_blue text-center">at Ollie's House</div>
                 <div class="lbt_body text-center text-black mt-2">RSVP to Ollie's Mom</div>
                 <div class="lbt_body text-center text-black">by June 1st, 2024</div>
-                <img class="text-center mt-3 fixed-bottom" src="./images/lbt_truck.png">
+                <img id="truck_img" class="text-center mt-3 fixed-bottom d-none" src="./images/lbt_truck.png">
             </div>
         </div>
     </a>
+    <script>
+        let truckImg = document.getElementById('truck_img');
+
+        window.addEventListener("orientationchange", (this) => {
+            if (this.screen.orientation.type === 'portrait-primary') {
+                truckImg.classList.remove('d-none');
+                console.log('show truck');
+            } else {
+                truckImg.classList.add('d-none');
+                console.log('hide truck');
+            }
+        });
+
+        // if (window.innerWidth < window.innerHeight) {
+        //     truckImg.classList.remove('d-none');
+        // }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
