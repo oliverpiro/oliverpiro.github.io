@@ -4,17 +4,41 @@ html {
 }
 
 .pg1 {
-    background-image: url('pg1.png');
+    background-image: url('./images/lbt_bg2.jpg');
+    height: 100%;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pg2 {
+    background-image: url('./images/lbt_bg2.jpg');
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.pg2 {
-    background-image: url('pg2.png');
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+@font-face {
+    font-family: Edmunds;
+    src: url('/fonts/Edmunds.otf') format("opentype");
+}
+
+@font-face {
+    font-family: PTBarnumBT-Regular;
+    src: url('/fonts/PTBarnumBT-Regular.ttf') format("opentype");
+}
+
+.lbt_title {
+    font-family: Edmunds;
+    font-size: 3.5rem;
+}
+
+.lbt_body {
+    font-family: PTBarnumBT-Regular;
+    font-size: 1.75rem;
+}
+
+.lbt_blue {
+    color: #2379AD;
 }
