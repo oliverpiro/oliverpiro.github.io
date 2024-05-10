@@ -33,23 +33,6 @@
             </div>
         </div>
     </a>
-    <script>
-        let truckImg = document.getElementById('truck_img');
-
-        window.addEventListener("orientationchange", (this) => {
-            if (this.screen.orientation.type === 'portrait-primary') {
-                truckImg.classList.remove('d-none');
-                console.log('show truck');
-            } else {
-                truckImg.classList.add('d-none');
-                console.log('hide truck');
-            }
-        });
-
-        // if (window.innerWidth < window.innerHeight) {
-        //     truckImg.classList.remove('d-none');
-        // }
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
